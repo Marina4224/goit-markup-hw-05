@@ -517,6 +517,7 @@ button {
   pointer-events: auto;
 }
 .modal {
+  padding: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -556,8 +557,95 @@ button {
 .button-close-icon:focus {
   fill: #fff;
 }
+.modal-container-block {
+  margin-bottom: 8px;
+}
+
+.modal-block-label {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-form-input-cont {
+  position: relative;
+}
+.modal-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  outline: transparent;
+}
+.modal-input:focus,
+.modal-input:hover {
+  border: 1px solid #4d5ae5;
+}
+.button-modal-div {
+  fill: #2e2f42;
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+}
+.modal-input:focus + .button-modal-div {
+  fill: #4d5ae5;
+}
+
 .modal-title {
-  margin-top: 72px;
+  margin-top: 48px;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.modal-input-checkbox,
+.texteria {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+.texteria {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 8px;
+  margin-bottom: 16px;
+  outline: transparent;
+}
+.texteria:focus,
+.texteria:hover {
+  border: 1px solid #4d5ae5;
+}
+.modal-form-checkbox {
+}
+.custom-checkbox {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+  margin-right: 8px;
+}
+.checkbox:checked + .label-checkbox .custom-checkbox {
+  background-color: #404bbf;
+  border: transparent;
+  fill: #f4f4fd;
+}
+.label-checkbox {
+  cursor: pointer;
+  font: 400 12px / 1.16;
+  color: #8e8f99;
 }
