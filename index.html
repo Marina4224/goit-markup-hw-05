@@ -460,6 +460,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-email-div">
+          <p class="footer-email-text">Subscribe</p>
+          <form class="footer-email-form">
+            <label class="footer-email-lable" for="item-email"
+              ><input
+                class="footer-email-input"
+                type="email"
+                placeholder="E-mail"
+                id="item-email"
+            /></label>
+            <button class="footer-email-button" type="button">
+              Subscribe<svg class="icon-button" width="24" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-open">
@@ -513,7 +530,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-checkbox">
+          <div class="modal-form-texteria">
             <label class="modal-block-label">Comment</label>
             <textarea
               class="texteria"
@@ -522,19 +539,21 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <input
-            class="checkbox visually-hidden"
-            type="checkbox"
-            id="user-checkbox"
-          />
-          <label class="label-checkbox" for="user-checkbox"
-            ><span class="custom-checkbox"
-              ><svg class="button-modal-div" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use></svg></span
-            >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
-          </label>
-          <button type="submit">Send</button>
+          <div class="modal-form-checkbox">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              id="user-checkbox"
+            />
+            <label class="label-checkbox" for="user-checkbox"
+              ><span class="custom-checkbox"
+                ><svg class="" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="hero-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
